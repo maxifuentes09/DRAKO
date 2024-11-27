@@ -515,3 +515,60 @@ footer a {
     margin: 0 10px;
     font-weight: 500;
 }
+
+
+
+
+/* Estilos exclusivos para el contador */
+#drop-verano-contenedor {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: drop-verano-float 3s infinite ease-in-out;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#drop-verano-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    animation: drop-verano-glow 1.5s infinite alternate;
+}
+
+#drop-verano-contador {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Animaciones */
+@keyframes drop-verano-glow {
+    from {
+        color: #ff7a7a;
+        text-shadow: 0 0 10px #ff7a7a;
+    }
+    to {
+        color: #ffa500;
+        text-shadow: 0 0 20px #ffa500;
+    }
+}
+
+@keyframes drop-verano-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+

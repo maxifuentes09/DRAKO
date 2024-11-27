@@ -110,3 +110,49 @@ function moverSlide(direccion) {
 
 
 
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const contador = document.getElementById("drop-verano-contador");
+
+    // Fecha objetivo: Miércoles, 4 de diciembre
+    const fechaObjetivo = new Date("2024-12-04T00:00:00").getTime();
+
+    function actualizarContador() {
+        const ahora = new Date().getTime();
+        const diferencia = fechaObjetivo - ahora;
+
+        if (diferencia <= 0) {
+            contador.innerHTML = "¡El nuevo drop ya está disponible!";
+            clearInterval(intervalo);
+            return;
+        }
+
+        const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+        contador.innerHTML = `
+            <span><strong>${dias}</strong> días</span>,
+            <span><strong>${horas}</strong> horas</span>,
+            <span><strong>${minutos}</strong> minutos</span>,
+            <span><strong>${segundos}</strong> segundos</span>
+        `;
+    }
+
+    // Actualizar cada segundo
+    const intervalo = setInterval(actualizarContador, 1000);
+    actualizarContador();
+});
+
+
+
+
+
