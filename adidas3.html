@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROLEX TEE - HUSLTE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">DRRAKO</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Nuestras Camisetas</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div class="carrusel">
+            <button class="boton boton--izquierda" onclick="moverSlide(-1)">&#10094;</button>
+            <div class="carrusel__contenedor" id="contenedorCarrusel">
+                <div class="carrusel__slide"><img src="img/azul2.jpg" alt="Imagen 1"></div>
+                <div class="carrusel__slide"><img src="img/azul1.jpg" alt="Imagen 2"></div>
+                <div class="carrusel__slide"><img src="img/azul3.jpg" alt="Imagen 3"></div>
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <button class="boton boton--derecha" onclick="moverSlide(1)">&#10095;</button>
+        </div>
+            <div class="product-details">
+                <h1>REMERA BASICA ADIDAS</h1>
+                <p class="price">$9.500</p>
+                <p>talles reales.</p>
+                <form id="addToCartForm">
+                    <div class="size-selector">
+                        <button type="button" class="size-btn" data-size="S">S</button>
+                        <button type="button" class="size-btn" data-size="M">M</button>
+                        <button type="button" class="size-btn" data-size="L">L</button>
+                        <button type="button" class="size-btn" data-size="XL">XL</button>
+                    </div>
+                    <div class="quantity-selector">
+                        <button type="button" id="decreaseQuantity">-</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button type="button" id="increaseQuantity">+</button>
+                    </div>
+                    <a href="https://wa.me/p/27026406450339104/5491165535765" class="buy-now-link">
+                        <button type="button" class="buy-now">Comprar ahora</button>
+                      </a>
+                </form>
+                <div class="product-description">
+                    <p>Camiseta oversize 100% algodón peinado, cuello reforzado.</p>
+                </div>
+                <div class="shipping-info">
+                   
+                    
+                </div>
+                <a href="#" class="share-link">Share</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DRAKO. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
