@@ -1,0 +1,574 @@
+/* Estilos generales */
+body {filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3)); /* Ajusta el desplazamiento, difuminado y transparencia */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cec7c72a;
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+body {
+    font-family: 'Cinzel', serif; /* Aplica la fuente Cinzel a todo el cuerpo del documento */
+    font-weight: 400; /* Peso por defecto */
+}
+
+h2, h3 {
+    font-family: 'Cinzel', serif; /* Aplica Cinzel a todos los títulos */
+    font-weight: 700; /* Estilo más pesado para destacar los títulos */
+}
+
+p, a {
+    font-family: 'Cinzel', serif; /* Aplica Cinzel a los párrafos y enlaces */
+    font-weight: 400; /* Peso normal para el texto */
+}
+
+
+.image-container {
+    width: 100vw;  /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
+    height: 100vh; /* Asegura que el contenedor ocupe todo el alto de la pantalla */
+    margin: 0;     /* Elimina cualquier margen extra */
+    padding: 0;    /* Elimina cualquier relleno extra */
+}
+
+.custom-image {
+    width: 100%;    /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%;   /* Hace que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Cubre completamente el contenedor sin deformarse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra sutil */
+    border-radius: 10px; /* Bordes redondeados como detalle */
+}
+
+
+/* Header y navegación */
+header {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.icon-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Sección Hero */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.equation {
+    font-family: monospace;
+    font-size: 1.25rem;
+}
+
+/* Sección de productos */
+.products {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.products h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product {
+    display: block;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.product:hover img {
+    opacity: 0.8;
+}
+
+.product h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.product p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer a {
+    margin: 0 1rem;
+    color: #666;
+}
+
+footer a:hover {
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+/* ADIDAS 1 HTML */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.icons a {
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.product-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.product-images {
+    flex: 1;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnail.active {
+    border-color: #333;
+}
+
+.product-details {
+    flex: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.size-selector {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.size-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.size-btn.selected {
+    background-color: #333;
+    color: #fff;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.quantity-selector button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#quantity {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #333;
+    margin: 0 0.5rem;
+}
+
+.add-to-cart, .buy-now {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.add-to-cart {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.buy-now {
+    background-color: #333;
+    color: #fff;
+}
+
+.product-description, .shipping-info {
+    margin-top: 2rem;
+}
+
+.share-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carrusel__contenedor {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carrusel__slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel__slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.carrusel__slide img:hover {
+    transform: scale(1.05);
+}
+.boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+.boton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.boton--izquierda {
+    left: 10px;
+}
+.boton--derecha {
+    right: 10px;
+}
+
+
+
+/* Importamos la fuente 'Playfair Display' desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Estilos generales de la sección */
+.sobre-nosotros {
+    background-color: #f7f7f7; /* Fondo suave */
+    padding: 40px; /* Espaciado alrededor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 800px; /* Máximo ancho */
+    margin: 40px auto; /* Centrado */
+    opacity: 0; /* Comienza invisible para la animación */
+    animation: fadeIn 1.5s forwards; /* Animación de aparición */
+}
+
+/* Animación de aparición suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Desplazamiento desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+    }
+}
+
+/* Estilo del título */
+.sobre-nosotros h2 {
+    font-family: 'Cinzel', serif; /* Fuente Cinzel */
+    font-size: 2.5rem; /* Tamaño grande */
+    text-align: center;
+    color: #333; /* Color de texto oscuro */
+    margin-bottom: 20px; /* Espaciado debajo */
+    text-transform: uppercase; /* Mayúsculas */
+    cursor: pointer; /* Cambia el cursor a mano cuando pasa sobre el título */
+    opacity: 0; /* Comienza invisible para la animación */
+    animation: fadeInTitle 1s forwards 0.5s; /* Animación de aparición con retardo */
+}
+
+/* Animación para el título */
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Desplazamiento desde arriba */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+    }
+}
+
+/* Estilo de los párrafos */
+.sobre-nosotros p {
+    font-family: 'Playfair Display', serif; /* Fuente Playfair Display */
+    font-size: 1.1rem; /* Tamaño de texto legible */
+    color: #555; /* Color gris suave */
+    line-height: 1.6; /* Espaciado de línea */
+    margin-bottom: 15px; /* Espaciado entre párrafos */
+    text-align: justify; /* Alineación justificada */
+    opacity: 0; /* Comienza invisible para la animación */
+    animation: fadeInText 1.5s forwards 1s; /* Animación de aparición para los párrafos */
+}
+
+/* Animación para los párrafos */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateX(-20px); /* Desplazamiento desde la izquierda */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Posición final */
+    }
+}
+
+/* Eliminar margen inferior en el último párrafo */
+.sobre-nosotros p:last-of-type {
+    margin-bottom: 0; /* Eliminar margen inferior en el último párrafo */
+}
+
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+
+
+
+/* Estilos exclusivos para el contador */
+#drop-verano-contenedor {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: drop-verano-float 3s infinite ease-in-out;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#drop-verano-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    animation: drop-verano-glow 1.5s infinite alternate;
+}
+
+#drop-verano-contador {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Animaciones */
+@keyframes drop-verano-glow {
+    from {
+        color: #ff7a7a;
+        text-shadow: 0 0 10px #ff7a7a;
+    }
+    to {
+        color: #ffa500;
+        text-shadow: 0 0 20px #ffa500;
+    }
+}
+
+@keyframes drop-verano-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+
